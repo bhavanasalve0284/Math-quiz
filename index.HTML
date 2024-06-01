@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity 1</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.main.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="game.css">
+
+        <script src="game_login.js"></script>
+    </head>
+
+<body>
+
+    <h4 id="player1_name"></h4> <span id="player1_score"></span>
+<br>
+<h4 id="player2_name"></h4> <span id="player2_score"></span>
+    <centre>
+        <h2 style="color: white;">Guess The World</h2>
+        <h3 id="player_question"></h3>
+        <h3 id="player_answer"></h3>
+<div id="output" class="col-lg-6"></div>
+        <br>
+        <br>
+        <label>Send You Word:<b style="color: red"></b></label>
+        <br>
+    </label>
+        <input type="text" id="word" class="form-control" placeholder="word">
+        <br>
+        <button onclick="send()" class="btn btn-success" style="width: 30%"></button>
+        </centre>
+    </div>
+
+    <script src="game_page.js"></script>
+        </body>
+
+        </html>
+
+        <h1>Game</h1>
+
+        <div class="col-lg-4 col-sm-B col-xs-11 login_div1">
+     <h3>Player 1 Login for the game</h3>
+     <label>User Name:</label>
+     <input type="text" id="player1_name_input" class="form-control"placeholder="Player 1 Name">
+     <br>
+     </div>
+
+     <br>
+     <div class="col-lg-4 col-sm-B col-xs-11 login_div2">
+        <h3>Player 2 Login for the game</h3>
+        <label>User Name:</label>
+        <input type="text" id="player2_name_input" class="form-control"placeholder="Player 2 Name">
+        <br>
+        </div>
+        <br>
+
+
+    <div class="container">
+        <h1 style="text-align: centre;">Activity 1</h1>
+        <h2 id="score">Score : 0</h2>
+
+        <button class="btn btn-warning" onclick="updatescore();">Update the score</button>
+        <br>
+        <br>
+
+        <button class="btn btn-success" onclick="saveScore();">Save score</button>
+        <br>
+        <br>
+
+        <button class="btn btn-info" onclick="nextPage();">Next page</button>
+    </div>
+
+    <script src="activity.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Activity 2</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1 style="text-align: centre;">Activity 2</h1>
+
+            <div id="update"></div>
+
+            <button class="btn btn-success" onclick="getScore();">Get score</button>
+            <br>
+            <br>
+            <button class="btn btn-info" onclick="back()";>Black</button>
+        </div>
+
+        <script src="activity2.js"></script>
+    </body>
+    </html>
